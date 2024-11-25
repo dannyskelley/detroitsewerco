@@ -1,61 +1,503 @@
 <!-- ============================================ -->
 <!--                   Footer                     -->
 <!-- ============================================ -->
+<br><br><br><br><br>
+<style>
+    /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-1294 {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    margin-bottom: -5.625rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    /* 40px - 80px */
+    padding: clamp(2.5rem, 5vw, 5rem);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+    transform: translateY(-9.375rem);
+  }
+  #cta-1294 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    /* changes to 100% at tablet */
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #cta-1294 .cs-title {
+    width: 100%;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-1294 .cs-form {
+    width: 100%;
+    max-width: 45.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #cta-1294 .cs-input {
+    font-size: 1rem;
+    width: 100%;
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
+    margin: 0;
+    padding: 0;
+    padding-left: 1.25rem;
+    border: none;
+    /* prevents padding from adding to width and height */
+    box-sizing: border-box;
+    display: block;
+  }
+  #cta-1294 .cs-input::placeholder {
+    color: #767676;
+  }
+  
+  #cta-1294 .cs-background {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-1294 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cta-1294 .cs-container {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  #cta-1294 .cs-content {
+    text-align: left;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  #cta-1294 .cs-form {
+    flex-direction: row;
+  }
+  #cta-1294 .cs-input {
+    width: 100%;
+    max-width: 32.8125rem;
+  }
+  #cta-1294 .cs-submit {
+    width: auto;
+    min-width: 11.875rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #cta-1294 {
+    margin-bottom: 0rem;
+  }
+  #cta-1294 .cs-content {
+    flex-direction: row;
+  }
+  #cta-1294 .cs-form {
+    width: 60%;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
 
 
-<footer id="footer">
-    <div class="container">
-        <div class="left-section">
-            
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-footer-1294 {
+    padding: var(--sectionPadding);
+   
+    padding-bottom: 1.25rem;
+    background-color: #1a1a1a;
+    position: relative;
+    z-index: 10;
+    /* Navigation Links */
+  }
+  #cs-footer-1294 .cs-container {
+    width: 100%;
+    margin: auto;
+  }
+  #cs-footer-1294 .cs-logo-group {
+    /* takes up all the space, lets the other ul's wrap below it */
+    width: 100%;
+    position: relative;
+  }
+  #cs-footer-1294 .cs-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    /* 20px - 24px */
+    margin: 0 0 clamp(1.25rem, 2vw, 1.5rem) 0;
+  }
+  #cs-footer-1294 .cs-logo-img {
+    width: 100%;
+    height: auto;
+  }
+  #cs-footer-1294 .cs-logo-img.dark {
+    display: none;
+  }
+  #cs-footer-1294 .cs-text {
+    color: var(--bodyTextColorWhite);
+    margin: 0 0 2rem 0;
+  }
+  #cs-footer-1294 .cs-link {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    text-decoration: none;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+    transition: color 0.3s;
+  }
+  #cs-footer-1294 .cs-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-1294 .cs-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 2.25rem;
+  }
+  #cs-footer-1294 .cs-nav {
+    width: 45%;
+    max-width: 11.25rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #cs-footer-1294 .cs-nav-li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #cs-footer-1294 .cs-header {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+    display: block;
+  }
+  #cs-footer-1294 .cs-nav-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 1.5em;
+    width: auto;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+  #cs-footer-1294 .cs-nav-link:before {
+    /* underline */
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #cs-footer-1294 .cs-nav-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-1294 .cs-nav-link:hover:before {
+    width: 100%;
+  }
+  #cs-footer-1294 .cs-bottom {
+    max-width: 80rem;
+    margin: auto;
+    /* 48px - 100px */
+    margin-top: clamp(3rem, 6vw, 6.25rem);
+    /* 20px - 32px */
+    padding: clamp(1.25rem, 3vw, 2rem) 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2.25rem;
+    row-gap: 0.75rem;
+  }
+  #cs-footer-1294 .cs-copyright {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #cs-footer-1294 .cs-copyright .cs-copyright-link {
+    opacity: 1;
+  }
+  #cs-footer-1294 .cs-copyright-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    line-height: 1.5em;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+    transition: color 0.3s;
+  }
+  #cs-footer-1294 .cs-copyright-link:hover {
+    color: var(--secondary);
+  }
+  #cs-footer-1294 .cs-copyright {
+    text-align: center;
+    width: 100%;
+  }
+  #cs-footer-1294 .cs-floater-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cs-footer-1294 .cs-floater {
+    width: 31.625rem;
+    height: 31.625rem;
+    margin-left: 34.375rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    opacity: 0.1;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+  }
+  #cs-footer-1294 .cs-floater:before {
+    content: "";
+    width: 44.6875rem;
+    height: 44.6875rem;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    opacity: 0.6;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #cs-footer-1294 .cs-floater:after {
+    content: "";
+    width: 60.1875rem;
+    height: 60.1875rem;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cs-footer-1294 .cs-wrapper {
+    row-gap: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 5.5rem;
+    row-gap: 2.5rem;
+  }
+  #cs-footer-1294 .cs-nav {
+    width: auto;
+  }
+  #cs-footer-1294 .cs-bottom {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  #cs-footer-1294 .cs-copyright {
+    text-align: left;
+    width: auto;
+    margin-right: auto;
+  }
+  #cs-footer-1294 .cs-floater {
+    display: block;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cs-footer-1294 .cs-container {
+    max-width: 80rem;
+    flex-wrap: nowrap;
+    /* align everything to the right */
+    justify-content: flex-end;
+    column-gap: clamp(2.5rem, 6vw, 5.25rem);
+  }
+  #cs-footer-1294 .cs-logo-group {
+    width: 40%;
+    max-width: 44.1875rem;
+    /* pushes away from everything to the right */
+    margin-right: auto;
+  }
+  #cs-footer-1294 .cs-text {
+    width: 100%;
+  }
+  #cs-footer-1294 .cs-graphic {
+    display: block;
+  }
+}
+                                
+</style>
+
+<footer id="cs-footer-1294">
+    <div class="cs-container">       
                 
-            <a class="logo" href="/"><img style="filter: invert(100%); margin: auto; display: block;" loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="264" height="78"></a>
-            <Div class="cs-topper" style="color:#999">Detroit General Labor</Div>
-            <Div class="cs-topper" style="color:#999; margin-bottom: 50px;">"We're here to make your life easier"</Div>
-            <div class="cs-social" style="margin: 20px 0px 50px;">
-<Div class="cs-topper">Message us on:</Div>
-                <a class="cs-social-link" aria-label="visit google profile" href="https://nextdoor.com/profile/01fYx_9bKZFb2nLMK/?is=feed_author">
-                    <img style="margin-right: 20px;width: 200px; height: 50px; filter: grayscale(1) brightness(1000%);" class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/nextdoor.svg" alt="google">
+        <div class="cs-wrapper">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" style="filter:  brightness(1000%) invert(1);" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="240" height="32">
                 </a>
-
-
+                <p class="cs-text">
        
-            </div>
-        </div>
-        
-        <div class="right-section">
-            <div class="lists">
-                
-                <ul>
-                    <li>
-                        <h2>Contact Us</h2>
-                    </li>
-<div class="cs-topper"> Call or Text:</div>
-                    <li style="padding-bottom: 30px;">
-                        <a href="tel:{{client.phoneForTel}}">
-                           
-                            {{client.phoneFormatted}}
-                        </a>
-                    </li>
+                    Contact Detroit Sewer Co for Fast and Reliable Sewer Services
 
-                    <li>
-                        <a href="/#top">Navigate to Top of page</a>
-                    </li>
-                </ul>
-
-                
+                </p>
+                <a href="tel:{{client.phoneForTel}}" class="cs-title" style="color: var(--primary); text-decoration: none;">
+                    <img class="cs-link-icon" style="filter: brightness(0) invert(1);" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="icon" width="24" height="24">
+                    {{client.phoneForTel}}
+                </a>
             </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Our Services</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Residential Sewer Cleaning</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Commercial Sewer Maintenance</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Emergency Sewer Repairs</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Sewer Line Installation</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Where We Work</span>
+                </li>
+   
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Detroit</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Dearborn</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Southfield</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Livonia</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Warren</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Sterling Heights</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Farmington Hills</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Troy</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Ann Arbor</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Royal Oak</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Novi</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Canton</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">All of Southeast Michigan</a>
+                </li>
+            </ul>
+                        
+
+          <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <a class="cs-link" href="#top">Back to Top</a>
+            </li>
+      
+           
+        </ul>
+           
         </div>
     </div>
-    <STYLE>
-        .credit {color:white; text-align: left;}
-        .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
-    .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
-    .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
-    .back2top {font-size:2px}
-    </STYLE>
-    <div class="credit">
-        <span>Website by</span>
-       
-        <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
+    <div class="cs-bottom">
+      <STYLE>
+        #footer  .credit {color:white;}
+          .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; border:.5px solid black; background-color: white; padding:0 8px; border-radius: 999px;}
+      .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
+      .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
+      .back2top {font-size:2px}
+      </STYLE>
+      <div class="credit">
+          <span style="color:white">Website by</span>
+         
+          <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
+      </div>
     </div>
+
 </footer>
+                                

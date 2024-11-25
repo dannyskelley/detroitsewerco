@@ -1,0 +1,196 @@
+<!-- ============================================ -->
+<!--                  Why Choose                  -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---        Why Choose          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-1550 {
+    padding: var(--sectionPadding);
+    position: relative;
+    background-color: var(--secondary);
+  }
+  #why-choose-1550 .cs-container {
+    max-width: 80rem;
+    margin: auto;
+  }
+  #why-choose-1550 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+    row-gap: 2.5rem;
+  }
+  #why-choose-1550 .cs-item {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 24px - 40px */
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+    /* keeps all cs-items the same size with differing content lengths */
+    flex: 1 0 0;
+  }
+  #why-choose-1550 .cs-icon-wrapper {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid var(--primary);
+    background-color:  var(--primary);;
+    border-radius: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  #why-choose-1550 .cs-icon-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #why-choose-1550 .cs-icon {
+    width: 2.25rem;
+    height: auto;
+    box-sizing: content-box;
+    filter: brightness(0) invert(1);
+  }
+  #why-choose-1550 .cs-flex {
+    /* using margins instead of the flex parent for if content overflows. this keeps the icons in line of each other, while still centering the text */
+    margin: auto 0;
+  }
+  #why-choose-1550 .cs-h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 0.5rem;
+    color: white;
+  }
+  #why-choose-1550 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: white;
+  }
+  #why-choose-1550 .cs-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #why-choose-1550 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-1550 .cs-card-group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  #why-choose-1550 .cs-item {
+    text-align: left;
+    align-items: start;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #why-choose-1550 .cs-item {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
+                                
+</style>
+<section id="why-choose-1550">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/day-care-thumb.svg" alt="experience icon"
+                            width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Years of Expertise</h2>
+                    <p class="cs-item-text">
+                        Decades of trusted service in Detroit, handling all types of sewer issues with professionalism.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/day-care-thumb.svg" alt="equipment icon"
+                            width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Advanced Equipment</h2>
+                    <p class="cs-item-text">
+                        Utilizing cutting-edge tools like hydro-jetting and industrial sewer rodders for top-quality results.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/day-care-thumb.svg" alt="fast service icon"
+                            width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">24/7 Emergency Service</h2>
+                    <p class="cs-item-text">
+                        We’re available around the clock to address your urgent sewer needs with quick and reliable service.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/day-care-thumb.svg" alt="affordable pricing icon"
+                            width="48" height="48">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Transparent Pricing</h2>
+                    <p class="cs-item-text">
+                        No hidden fees—just honest, fair pricing that reflects our commitment to quality service.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/sewer-service-mobile.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/sewer-service-desktop.png">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/sewer-service-desktop.png" alt="background texture" width="1920" height="550">
+    </picture>
+</section>

@@ -1,0 +1,213 @@
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+
+<style>
+    /*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1734 {
+    padding: var(--sectionPadding);
+    background-color: #F7F7F7;
+    position: relative;
+  }
+  #services-1734 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1734 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-1734 .cs-title {
+    max-width: 600px;
+    color: var(--headerColor);
+  }
+  #services-1734 .cs-text {
+    color: var(--bodyTextColor);
+  }
+  #services-1734 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2vw, 1.25rem);
+    row-gap: 2rem;
+  }
+  #services-1734 .cs-item {
+    list-style: none;
+    width: 100%;
+    grid-column: span 12;
+  }
+  #services-1734 .cs-item:hover .cs-picture img {
+    opacity: .3;
+    transform: scale(1.2);
+  }
+  #services-1734 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #services-1734 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* we use flexbox here to grow the link to fit the whole item, making it clickable everywhere, no matter the size */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 12px - 20px */
+    gap: clamp(0.75rem, 1.6vw, 1.25rem);
+    position: relative;
+    z-index: 1;
+  }
+  #services-1734 .cs-picture {
+    width: 100%;
+    /* 300px - 380px */
+    height: clamp(12.5rem, 33vw, 26.25rem);
+    background-color: #000;
+    display: block;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+  }
+  #services-1734 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform ease-in-out 0.5s, opacity 0.3s;
+  }
+  #services-1734 .cs-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #services-1734 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-1734 .cs-arrow {
+    width: 1.5rem;
+    height: auto;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1734 .cs-container {
+    max-width: 80rem;
+  }
+  #services-1734 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #services-1734 .cs-title {
+    margin: 0;
+  }
+  #services-1734 .cs-text {
+    width: 50%;
+  }
+  #services-1734 .cs-item {
+    grid-column: span 3;
+  }
+}
+                                
+</style>
+<section id="services-1734">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-wrapper">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Reliable Sewer Cleaning & Repair Services in Detroit</h2>
+            </div>
+            <p class="cs-text">
+                At Detroit Sewer Co, we specialize in clearing blocked sewer lines and repairing damaged pipes. Our expert technicians use state-of-the-art equipment such as hydro-jetting, industrial sewer rodders, and vacuum excavation to ensure fast, effective results.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+                        <img decoding="async" src="/assets/images/bg.jpg" alt="sewer cleaning" width="384" height="480" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Sewer Cleaning</h3>
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black%20upper%20right%20arrow.svg" alt="arrow icon" width="24" height="24" aria-hidden="true">
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpgg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+                        <img decoding="async" src="/assets/images/bg.jpg" alt="sewer repair" width="384" height="480" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Sewer Repair</h3>
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black%20upper%20right%20arrow.svg" alt="arrow icon" width="24" height="24" aria-hidden="true">
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+                        <img decoding="async" src="/assets/images/bg.jpg" alt="sewer installation" width="384" height="480" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Sewer Line Installation</h3>
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black%20upper%20right%20arrow.svg" alt="arrow icon" width="24" height="24" aria-hidden="true">
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+                        <img decoding="async" src="/assets/images/bg.jpg" alt="sewer maintenance" width="384" height="480" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Routine Maintenance</h3>
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black%20upper%20right%20arrow.svg" alt="arrow icon" width="24" height="24" aria-hidden="true">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+               
