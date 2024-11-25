@@ -6,7 +6,16 @@
   /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
+body.scroll #cs-navigation .cs-logo {
+      width: 80px;
+      transition: all ease .2s;
+    }
 
+    body.scroll #cs-navigation .cs-top-container {
+ 
+        /* 16px - 20px */
+        padding: clamp(10px, 2.5vw, 1.25rem) 1rem;
+    }
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
     body.cs-open {
@@ -21,10 +30,7 @@
         overflow: hidden;
         visibility: hidden;
     }
-    body.scroll #cs-navigation .cs-logo {
-      width: 150px;
-      max-width: 150px;
-    }
+
 
 
     #cs-navigation {
@@ -53,7 +59,7 @@
     #cs-navigation .cs-top-container {
         width: 100%;
         /* 16px - 20px */
-        padding: clamp(1rem, 2.5vw, 1.25rem) 1rem;
+        padding: clamp(20px, 2.5vw, 1.25rem) 1rem;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         display: flex;
@@ -417,9 +423,8 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  body.scroll #cs-navigation .cs-logo {
-      height: 100px;
-      max-width: 50px;
+    body.scroll #cs-navigation .cs-logo {
+      height: 50px;
     }
     
     #cs-navigation .cs-dropdown {
