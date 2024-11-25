@@ -1,0 +1,160 @@
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-563 {
+        padding: var(--sectionPadding);
+    }
+    #services-563 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #services-563 .cs-content {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #services-563 .cs-topper {
+        color: var(--headerColor);
+    }
+    #services-563 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #services-563 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #services-563 .cs-color {
+        color: var(--primary);
+    }
+    #services-563 .cs-h3 {
+        /* 25px - 31px */
+        font-size: clamp(1.5625rem, 3vw, 1.9375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: inherit;
+        /* 16px - 20px */
+        margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+        color: var(--headerColor);
+    }
+    #services-563 .cs-ul {
+        width: 100%;
+        margin: 0 0 2rem 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 16px - 24px */
+        gap: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    #services-563 .cs-li {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-weight: 700;
+        list-style: none;
+        line-height: 1.5em;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    #services-563 .cs-icon {
+        /* adds extra space between the icon and top of parent so it's more centered */
+        margin-top: clamp(0.125rem, 0.47vw, 0.4375rem);
+    }
+    
+    #services-563 .cs-picture {
+        /* changes at tablet */
+        width: 100%;
+        max-width: 39.375rem;
+        /* changes to a clamp at tablet */
+        height: 24.75rem;
+        display: block;
+        position: relative;
+    }
+    #services-563 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-563 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #services-563 .cs-picture {
+        width: 46vw;
+        /* 415px - 528px */
+        height: clamp(25.9375rem, 50vw, 33rem);
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+    #services-563 .cs-content {
+        width: 45%;
+        max-width: 32.5rem;
+    }
+}
+
+                                
+</style>
+
+<section id="services-563">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/computer-m.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/computer.jpg">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1111888613890782%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Sewer Services</span>
+            <h2 class="cs-title">Is Your Sewer Line <span class="cs-color">Clogged or Broken?</span></h2>
+            <h3 class="cs-h3">We Can Help!</h3>
+            <p class="cs-text">
+                Sewer blockages, broken pipes, and water backups can cause severe damage to your property. Ignoring these problems can lead to costly repairs, foul odors, and health hazards. Whether you're dealing with a simple clog or a collapsed sewer line, Detroit Sewer Co has the experience and tools to solve your sewer problems fast.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+                    Fast and Reliable Sewer Services
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+                    Solutions for Clogged and Broken Pipes
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16" height="18">
+                    Prevent Costly Repairs and Hazards
+                </li>
+            </ul>
+            <a href="tel:+1-313-123-4567" class="cs-button-solid">Call Now to Resolve Your Sewer Issues in Detroit!</a>
+        </div>
+        
+    </div>
+</section>
+                                
