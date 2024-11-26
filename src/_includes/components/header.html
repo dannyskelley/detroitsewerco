@@ -306,7 +306,7 @@ body.scroll #cs-navigation .cs-logo {
     #cs-navigation .cs-call .cs-wrapper {
         width: 3.5rem;
         height: 3.5rem;
-        background-color: var(--primary);
+        background-color: var(--secondary);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -615,7 +615,7 @@ body.scroll #cs-navigation .cs-logo {
         content: "";
         width: 100%;
         height: 100%;
-        background-color: var(--primary);
+        background-color: var(--secondary);
         opacity: 0.1;
         position: absolute;
         display: block;
@@ -805,25 +805,27 @@ body.scroll #cs-navigation .cs-logo {
               <img src="/assets/images/logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
           </a>
           <div class="cs-contact-group">
-              <a class="cs-contact-link" href="mailto:Info@invetexfinance.com">
+              <a target="_blank" class="cs-contact-link" href="https://www.facebook.com/profile.php?id=100069830457144">
                   <picture class="cs-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/yellow-mail.svg" alt="icon" width="24" height="24">
+                      <img class="cs-icon" loading="lazy" decoding="async" style="filter: brightness(0%);" src="/assets/images/fb.svg" alt="icon" width="24" height="24">
                   </picture>
                   <div class="cs-info">
-                      <span class="cs-header">Send A Message</span>
-                      <span class="cs-link-content">Info@invetexfinance.com</span>
+                      
+                      <span class="cs-link-content">Find us on</span>
+                      <span class="cs-header">Facebook</span>
                   </div>
               </a>
-              <a class="cs-contact-link" href="mailto:Info@health&wellness.com">
+              <a class="cs-contact-link">
                   <picture class="cs-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/yellow-pin.svg" alt="icon" width="24" height="24">
+                      <img class="cs-icon" loading="lazy" decoding="async" style="filter: brightness(0%);"  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/yellow-pin.svg" alt="icon" width="24" height="24">
                   </picture>
                   <div class="cs-info">
-                      <span class="cs-header">Visit Us At</span>
-                      <span class="cs-link-content">Oak Harbor, WA</span>
+                     
+                      <span class="cs-link-content">Serving</span>
+                      <span class="cs-header">All Metro Detroit</span>
                   </div>
               </a>
-              <a href="" class="cs-button-solid">Schedule Appointment</a>
+              <a href="tel:{{client.phoneForTel}}" class="cs-button-solid">Schedule Appointment</a>
           </div>
           <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
           <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
@@ -891,8 +893,8 @@ body.scroll #cs-navigation .cs-logo {
                   </ul>
               </div>
           </nav>
-          <a class="cs-call" href=" {{client.phoneForTel}}">
-              <picture class="cs-wrapper">
+          <a class="cs-call" href="tel:{{client.phoneForTel}}">
+              <picture class="cs-wrapper" style=" background-color: var(--primary);">
                   <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="icon" width="24" height="24">
               </picture>
               <div class="cs-info">
