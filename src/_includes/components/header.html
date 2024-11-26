@@ -11,11 +11,7 @@ body.scroll #cs-navigation .cs-logo {
       transition: all ease .2s;
     }
 
-    body.scroll #cs-navigation .cs-top-container {
- 
-        /* 16px - 20px */
-        padding: clamp(10px, 2.5vw, 1.25rem) 1rem;
-    }
+
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
     body.cs-open {
@@ -424,7 +420,8 @@ body.scroll #cs-navigation .cs-logo {
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     body.scroll #cs-navigation .cs-logo {
-      height: 50px;
+     width: 120px;
+      height: auto;
     }
     
     #cs-navigation .cs-dropdown {
@@ -939,7 +936,7 @@ body.scroll #cs-navigation .cs-logo {
     
     document.addEventListener('scroll', (e) => { 
         const scroll = document.documentElement.scrollTop;
-        if(scroll >= 100){
+        if(scroll >= 50){
     document.querySelector('body').classList.add('scroll')
         } else {
         document.querySelector('body').classList.remove('scroll')
