@@ -19,6 +19,7 @@
       z-index: 1;
       /* prevents overflow from the lines extending past the screen width */
       overflow: hidden;
+      margin-top: 100px;
   }
   #hero-997 .cs-container {
       width: 100%;
@@ -71,7 +72,8 @@
   }
   #hero-997 .cs-title {
       /* 39px - 80px */
-      font-size: clamp(2.1375rem, 4.4vw, 4rem);
+      font-size: clamp(2.6375rem, 4.4vw, 4rem);
+      text-transform: none;
       font-weight: 900;
       line-height: 1.2em;
       text-align: left;
@@ -166,21 +168,12 @@
   }
 }
 
-/* Large Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 51.25rem) {
-  #hero-997 {
-    margin-top: 100px;
-      padding: clamp(5.5rem, 15.95vw, 15.75rem) 2rem 0;
-      /* 100px - 250px */
-      padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
-
-  }
-}
 
 /* Large Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-997 {
-      padding: clamp(10.5rem, 10.95vw, 10.75rem) 2rem 0;
+    margin-top: 100px;
+      padding: clamp(15.5rem, 15.95vw, 15.75rem) 2rem 0;
       /* 100px - 250px */
       padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
       background: url("/assets/images/bg.jpg");

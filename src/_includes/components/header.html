@@ -7,7 +7,8 @@
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 body.scroll #cs-navigation .cs-logo {
-      width: 80px;
+      width: 120px;
+      max-width: 100%;
       transition: all ease .2s;
     }
 
@@ -19,6 +20,11 @@ body.scroll #cs-navigation .cs-logo {
     }
     body.scroll #cs-navigation .cs-top-container {
         gap: 0;
+        padding: 10px;
+    }
+
+    body.scroll #cs-navigation .cs-container {
+        padding: 5px;
     }
     body.scroll #cs-navigation .cs-top-social {
         height: 0;
@@ -88,7 +94,7 @@ body.scroll #cs-navigation .cs-logo {
         position: relative;
     }
     #cs-navigation .cs-logo {
-        width: 200px;
+        width: 500px;
         max-width: 100%;
         /* 24px - 32px */
       
@@ -355,6 +361,12 @@ body.scroll #cs-navigation .cs-logo {
 
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
+
+    #cs-navigation .cs-logo {
+        width:450px;
+        max-width: 100%;
+
+    }
     #cs-navigation .cs-li {
         text-align: center;
         width: 100%;
@@ -419,6 +431,8 @@ body.scroll #cs-navigation .cs-logo {
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+
+    
     body.scroll #cs-navigation .cs-logo {
      width: 120px;
       height: auto;
@@ -673,9 +687,9 @@ body.scroll #cs-navigation .cs-logo {
         display: none;
     }
     #cs-navigation .cs-logo {
-        width: 18.4%;
-        max-width: 12.3125rem;
-        height: 6.75rem;
+        width: 450px;
+        max-width: 450px;
+        height: auto;
         /* margin-right auto pushes everything away from it to the right */
         margin: 0 auto 0 0;
         padding: 0;
