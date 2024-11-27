@@ -4,19 +4,19 @@ description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'services/'
 eleventyNavigation:
-    key: Services
+    key: About
     order: 300
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/projects.css">
+  
 {% endblock %}
 
 {% block body %}
-<DIV style="margin-top:100px"></DIV>
-{% include 'components/pricing.html' %}
+
+{% include 'components/content_services.html' %}
 
 
 {% include 'components/cta.html' %}
