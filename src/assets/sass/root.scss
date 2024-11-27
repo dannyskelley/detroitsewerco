@@ -10,8 +10,8 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary: red;
-        --primaryLight: red;
+        --primary: #E60000;
+        --primaryLight: #E60000;
         --secondary: #003399;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -20,7 +20,7 @@
 
         --nav:white ;
         --navLink:black ;
-        --navLinkActive:red ;
+        --navLinkActive:#E60000 ;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
