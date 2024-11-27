@@ -10,6 +10,7 @@ body.scroll #cs-navigation .cs-logo {
       width: 120px;
       max-width: 100%;
       transition: all ease .2s;
+      margin: 0px;
     }
 
 
@@ -837,7 +838,7 @@ body.scroll #cs-navigation .cs-logo {
                       <span class="cs-header">All Metro Detroit</span>
                   </div>
               </a>
-              <a href="tel:{{client.phoneForTel}}" class="cs-button-solid">Schedule Appointment</a>
+              {% include 'components/cta_button.html' %}
           </div>
           <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
           <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
