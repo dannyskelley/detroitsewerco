@@ -736,7 +736,7 @@ body.scroll #cs-navigation .cs-logo {
     }
     #cs-navigation .cs-li-link.cs-active {
         font-weight: 700;
-        color: var(--primary);
+        color: white;
     }
     #cs-navigation .cs-call {
         text-decoration: none;
@@ -863,16 +863,16 @@ body.scroll #cs-navigation .cs-logo {
               <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
               <div class="cs-ul-wrapper">
                   <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                      <li class="cs-li">
-                          <a href="" class="cs-li-link cs-active">
-                              Home
-                          </a>
-                      </li>
-                      <li class="cs-li">
-                          <a href="" class="cs-li-link">
-                              About
-                          </a>
-                      </li>
+                    <li class="cs-li">
+                        <a href="/" class="cs-li-link {{ 'cs-active' if '/' == page.url }}">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
+                            About
+                        </a>
+                    </li>
                       <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                       <li class="cs-li">
                         <a href="" class="cs-li-link">
