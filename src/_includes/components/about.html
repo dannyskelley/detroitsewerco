@@ -47,6 +47,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    background-color: #003399;
   }
   #banner-850 .cs-background:before {
     /* background color overlay */
@@ -55,8 +56,8 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #1a1a1a;
-    opacity: 0.64;
+    background: #003399;
+    opacity: 1;
     top: 0;
     left: 0;
     z-index: 1;
@@ -84,10 +85,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #banner-850 .cs-background:before {
-    opacity: 1;
-    background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.9) 16.86%, rgba(0, 0, 0, 0) 100%);
-  }
+
   #banner-850 .cs-wave {
     width: 100%;
     left: 0;
@@ -266,11 +264,7 @@
     </div>
     <!--Background Image-->
     <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga-m.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fyoga.jpg" alt="yoga" width="1280" height="568">
+     
     </picture>
     <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
     <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,18 +329,18 @@
             <!--Top Picture-->
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent1.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/33.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent1.jpg">
-                <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent1.jpg" alt="person" width="542" height="520" aria-hidden="true">
+                <source media="(min-width: 601px)" srcset="/assets/images/33.jpg">
+                <img decoding="async" src="/assets/images/33.jpg" alt="person" width="542" height="520" aria-hidden="true">
             </picture>
             <!--Top Picture-->
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent2.jpg">
-                <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fcontent2.jpg" alt="person" width="542" height="520" aria-hidden="true">
+                <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
+                <img decoding="async" src="/assets/images/2.jpg" alt="person" width="542" height="520" aria-hidden="true">
             </picture>
         </div>
     </div>
