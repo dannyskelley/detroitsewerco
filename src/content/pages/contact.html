@@ -29,7 +29,7 @@ eleventyNavigation:
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cs-contact-490 {
-    padding: var(--sectionPadding);
+    padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
   }
   #cs-contact-490 .cs-container {
     width: 100%;
@@ -144,8 +144,8 @@ eleventyNavigation:
     margin-top: 0.25rem;
     padding-left: 1.25rem;
     /* set transparent border so on hover border doesn't make it glitch */
-    border: 1px solid transparent;
-    border-bottom: 1px solid #b4b2c7;
+    border: 2px solid black;
+    border-radius: 5px;
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
     transition: border 0.3s;
@@ -185,6 +185,9 @@ eleventyNavigation:
 }
                                 
 </style>
+
+
+
 <section id="cs-contact-490">
     <div class="cs-container">
         <!-- Contact Info -->
@@ -202,23 +205,20 @@ eleventyNavigation:
                 PO Box 15252 Mill Creek, <br>Washington, USA 98082
             </a>-->
             <!--Email-->
+            <BR>
             <span class="cs-header">Email</span>
             <a href="mailtp:info@iabuyer.com" class="cs-link">Email Us</a>
             <!--Phone-->
-            <span class="cs-header">Phone</span>
+            <span class="cs-topper">Text for fastest response</span>
             <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
 
             <!--Social Buttons-->
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="">
-                    <img style="filter: grayscale(1) brightness(1000%);" class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/zillow.svg" alt="google" width="11" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+          
+                <a target="_blank" class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/profile.php?id=100069830457144">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
-                </a>
+         
             </div>
         </div>
         <!-- Form -->

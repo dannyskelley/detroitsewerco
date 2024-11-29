@@ -48,7 +48,6 @@
     color: var(--headerColor);
     text-align: inherit;
     font-family: "Poppins", Arial, sans-serif;
-    text-transform: uppercase;
   }
   .cs-text {
     margin: 0;
@@ -757,7 +756,7 @@
   }
   #cs-navigation .cs-li-link:before {
     position: absolute;
-    bottom: -20px;
+    bottom: -10px;
     left: 0;
     /* active state underline */
     content: "";
