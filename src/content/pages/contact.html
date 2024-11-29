@@ -29,7 +29,7 @@ eleventyNavigation:
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cs-contact-490 {
-    padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
+    padding: clamp(10.9375rem, 20vw, 16.25rem) 2rem clamp(6.25rem, 14vw, 12vw);
   }
   #cs-contact-490 .cs-container {
     width: 100%;
@@ -192,10 +192,25 @@ eleventyNavigation:
     <div class="cs-container">
         <!-- Contact Info -->
         <div class="cs-content">
-           
-            <h2 class="cs-title" style="margin-top:100px;">Get in touch</h2>
-            <span class="cs-topper" style="margin-top: 50px;">Let me know how I can assist you.</span>
-            <!--<p class="cs-text">
+         
+            <h2 class="cs-title" style="margin-top:100px;">  Ready for Fast, Reliable Sewer Service?
+            </h2>
+            <span class="cs-text" style="margin-top: 50px;"> Don’t let sewer problems disrupt your life. Whether you need a quick fix or a major repair, Detroit Sewer Co. is ready to help.
+              <BR><BR>
+                <BR>
+                  <span class="cs-topper">Email Us</span>
+                  <a href="mailtp:youremail@gmail.com" class="cs-link">youremail@gmail.com</a>
+                  <!--Phone-->
+                  <span class="cs-topper">Text 24/7 for fastest response</span>
+                  <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
+
+                  <BR>
+              Contact us today to schedule your sewer cleaning, repair, or installation service. Call us at 734-556-2035 or fill out our contact form to get started.
+              <BR><BR>
+              We’re here to ensure your sewer system stays in top condition, so you don’t have to worry about costly repairs down the road. Detroit Sewer Co. – Your Trusted Partner for Sewer Solutions in Detroit!</span>
+            
+              <BR>
+              <!--<p class="cs-text">
                 Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
             </p>-->
             
@@ -205,21 +220,9 @@ eleventyNavigation:
                 PO Box 15252 Mill Creek, <br>Washington, USA 98082
             </a>-->
             <!--Email-->
-            <BR>
-            <span class="cs-header">Email</span>
-            <a href="mailtp:info@iabuyer.com" class="cs-link">Email Us</a>
-            <!--Phone-->
-            <span class="cs-topper">Text for fastest response</span>
-            <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
+       
 
-            <!--Social Buttons-->
-            <div class="cs-social">
-          
-                <a target="_blank" class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/profile.php?id=100069830457144">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
-                </a>
-         
-            </div>
+
         </div>
         <!-- Form -->
         <form id="cs-form-490" name="Contact Form" method="post" style="margin-top:70px;">
