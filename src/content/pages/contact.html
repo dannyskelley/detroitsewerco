@@ -1,253 +1,279 @@
 ---
-title: 'Contact'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'contact/'
+title: "Contact"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "contact/"
 eleventyNavigation:
-    key: Contact Us
-    order: 500
+  key: Contact Us
+  order: 500
 ---
 
-{% extends "layouts/base.html" %}
-
-{% block head %}
-    
-{% endblock %}
-
-{% block body %}
+{% extends "layouts/base.html" %} {% block head %} {% endblock %} {% block body
+%}
 
 <!-- ============================================ -->
 <!--                Contact Form                  -->
 <!-- ============================================ -->
 
-
 <style>
-    /*-- -------------------------- -->
+  /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #cs-contact-490 {
-    padding: clamp(10.9375rem, 20vw, 16.25rem) 2rem clamp(6.25rem, 14vw, 12vw);
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #cs-contact-490 {
+      padding: clamp(10.9375rem, 20vw, 16.25rem) 2rem clamp(6.25rem, 14vw, 12vw);
+    }
+    #cs-contact-490 .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: 34.375rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    #cs-contact-490 .cs-content {
+      max-width: 32.625rem;
+      text-align: left;
+    }
+    #cs-contact-490 .cs-text {
+      /* 16px - 48px */
+      margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
+    }
+    #cs-contact-490 .cs-header {
+      /* 13px - 16px */
+      font-size: clamp(0.8125rem, 1.5vw, 1rem);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin: 0 0 1rem 0;
+      color: #b4b2c7;
+      display: block;
+    }
+    #cs-contact-490 .cs-link {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      text-decoration: none;
+      line-height: 1.5em;
+      font-weight: 700;
+      /* 16px - 32px */
+      margin: 0 0 clamp(1rem, 2.5vw, 2rem);
+      color: var(--headerColor);
+      display: block;
+    }
+    #cs-contact-490 .cs-link:hover {
+      text-decoration: underline;
+    }
+    #cs-contact-490 .cs-link:last-of-type {
+      margin-bottom: 0;
+    }
+    #cs-contact-490 .cs-social {
+      /* 32px - 80px */
+      margin-top: clamp(2rem, 6vw, 5rem);
+      display: inline-flex;
+      justify-content: flex-start;
+      gap: 0.75em;
+    }
+    #cs-contact-490 .cs-social-link {
+      /* 32px - 52px */
+      width: clamp(2rem, 4vw, 3.25rem);
+      height: clamp(2rem, 4vw, 3.25rem);
+      background-color: #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    #cs-contact-490 .cs-social-link:hover {
+      background-color: #666;
+      transform: translateY(-0.1875rem);
+    }
+    #cs-contact-490 .cs-social-img {
+      /* 14px - 24px */
+      height: clamp(0.875rem, 2vw, 1.5rem);
+      width: auto;
+      display: block;
+    }
+    #cs-contact-490 #cs-form-490 {
+      width: 100%;
+      max-width: 40.625rem;
+      /* 32px - 40px */
+      margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+      /* 20px - 40px */
+      padding: clamp(1.25rem, 4.5vw, 2.5rem);
+      /* prevents padding from affecting width and height */
+      box-sizing: border-box;
+    }
+    #cs-contact-490 .cs-label {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.3vw, 1rem);
+      line-height: 1.5em;
+      font-weight: 700;
+      /* 16px - 20px */
+      margin-bottom: clamp(1rem, 1em, 1.25rem);
+      color: var(--headerColor);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    #cs-contact-490 .cs-label-message {
+      /* 32px - 40px */
+      margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-contact-490 .cs-input,
+    #cs-contact-490 textarea {
+      font-size: 1rem;
+      width: 100%;
+      height: 4rem;
+      margin-top: 0.25rem;
+      padding-left: 1.25rem;
+      /* set transparent border so on hover border doesn't make it glitch */
+      border: 2px solid black;
+      border-radius: 5px;
+      /* prevents border & padding from affecting height */
+      box-sizing: border-box;
+      transition: border 0.3s;
+    }
+    #cs-contact-490 .cs-input:hover,
+    #cs-contact-490 textarea:hover {
+      border: 1px solid var(--primary);
+    }
+    #cs-contact-490 .cs-input::placeholder,
+    #cs-contact-490 textarea::placeholder {
+      color: #7d799c;
+    }
+    #cs-contact-490 textarea {
+      font-family: inherit;
+      margin: 0;
+      padding-top: 1.25rem;
+      min-height: 7.5rem;
+    }
   }
-  #cs-contact-490 .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 34.375rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
+  /* Tablet - 700px */
+  @media only screen and (min-width: 43.75rem) {
+    #cs-contact-490 .cs-container {
+      max-width: 80rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #cs-contact-490 .cs-content {
+      width: 40%;
+      /* pushes it to the right */
+
+      flex: none;
+    }
+    #cs-contact-490 #cs-form-490 {
+      margin: 0;
+    }
   }
-  #cs-contact-490 .cs-content {
-    max-width: 32.625rem;
-    text-align: left;
-  }
-  #cs-contact-490 .cs-text {
-    /* 16px - 48px */
-    margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
-  }
-  #cs-contact-490 .cs-header {
-    /* 13px - 16px */
-    font-size: clamp(0.8125rem, 1.5vw, 1rem);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin: 0 0 1rem 0;
-    color: #b4b2c7;
-    display: block;
-  }
-  #cs-contact-490 .cs-link {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    text-decoration: none;
-    line-height: 1.5em;
-    font-weight: 700;
-    /* 16px - 32px */
-    margin: 0 0 clamp(1rem, 2.5vw, 2rem);
-    color: var(--headerColor);
-    display: block;
-  }
-  #cs-contact-490 .cs-link:hover {
-    text-decoration: underline;
-  }
-  #cs-contact-490 .cs-link:last-of-type {
-    margin-bottom: 0;
-  }
-  #cs-contact-490 .cs-social {
-    /* 32px - 80px */
-    margin-top: clamp(2rem, 6vw, 5rem);
-    display: inline-flex;
-    justify-content: flex-start;
-    gap: 0.75em;
-  }
-  #cs-contact-490 .cs-social-link {
-    /* 32px - 52px */
-    width: clamp(2rem, 4vw, 3.25rem);
-    height: clamp(2rem, 4vw, 3.25rem);
-    background-color: #000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s, background-color 0.3s;
-  }
-  #cs-contact-490 .cs-social-link:hover {
-    background-color: #666;
-    transform: translateY(-0.1875rem);
-  }
-  #cs-contact-490 .cs-social-img {
-    /* 14px - 24px */
-    height: clamp(0.875rem, 2vw, 1.5rem);
-    width: auto;
-    display: block;
-  }
-  #cs-contact-490 #cs-form-490 {
-    width: 100%;
-    max-width: 40.625rem;
-    /* 32px - 40px */
-    margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
-    /* 20px - 40px */
-    padding: clamp(1.25rem, 4.5vw, 2.5rem);
-    /* prevents padding from affecting width and height */
-    box-sizing: border-box;
-  
-  }
-  #cs-contact-490 .cs-label {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.3vw, 1rem);
-    line-height: 1.5em;
-    font-weight: 700;
-    /* 16px - 20px */
-    margin-bottom: clamp(1rem, 1em, 1.25rem);
-    color: var(--headerColor);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  #cs-contact-490 .cs-label-message {
-    /* 32px - 40px */
-    margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
-  }
-  #cs-contact-490 .cs-input,
-  #cs-contact-490 textarea {
-    font-size: 1rem;
-    width: 100%;
-    height: 4rem;
-    margin-top: 0.25rem;
-    padding-left: 1.25rem;
-    /* set transparent border so on hover border doesn't make it glitch */
-    border: 2px solid black;
-    border-radius: 5px;
-    /* prevents border & padding from affecting height */
-    box-sizing: border-box;
-    transition: border 0.3s;
-  }
-  #cs-contact-490 .cs-input:hover,
-  #cs-contact-490 textarea:hover {
-    border: 1px solid var(--primary);
-  }
-  #cs-contact-490 .cs-input::placeholder,
-  #cs-contact-490 textarea::placeholder {
-    color: #7d799c;
-  }
-  #cs-contact-490 textarea {
-    font-family: inherit;
-    margin: 0;
-    padding-top: 1.25rem;
-    min-height: 7.5rem;
-  }
- 
-}
-/* Tablet - 700px */
-@media only screen and (min-width: 43.75rem) {
-  #cs-contact-490 .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #cs-contact-490 .cs-content {
-    width: 40%;
-    /* pushes it to the right */
-  
-    flex: none;
-  }
-  #cs-contact-490 #cs-form-490 {
-    margin: 0;
-  }
-}
-                                
 </style>
 
-
-
 <section id="cs-contact-490">
-    <div class="cs-container">
-        <!-- Contact Info -->
-        <div class="cs-content">
-         
-            <h2 class="cs-title" style="margin-top:100px;">  Ready for Fast, Reliable Sewer Service?
-            </h2>
-            <span class="cs-text" style="margin-top: 50px;"> Don’t let sewer problems disrupt your life. Whether you need a quick fix or a major repair, Detroit Sewer Co. is ready to help.
-              <BR><BR>
-                <BR>
-                  <span class="cs-topper">Email Us</span>
-                  <a href="mailtp:youremail@gmail.com" class="cs-link">youremail@gmail.com</a>
-                  <!--Phone-->
-                  <span class="cs-topper">Text 24/7 for fastest response</span>
-                  <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
+  <div class="cs-container">
+    <!-- Contact Info -->
+    <div class="cs-content">
+      <h2 class="cs-title" style="margin-top: 100px">
+        Ready for Fast, Reliable Sewer Service?
+      </h2>
+      <span class="cs-text" style="margin-top: 50px">
+        Don’t let sewer problems disrupt your life. Whether you need a quick fix
+        or a major repair, Detroit Sewer Co. is ready to help. <br /><br />
+        <br />
+        <span class="cs-topper">Email Us</span>
+        <a href="mailtp:danfresh@gmail.com" class="cs-link"
+          >danfresh@gmail.com</a
+        >
+        <!--Phone-->
+        <span class="cs-topper">Text 24/7 for fastest response</span>
+        <a href="tel:{{client.phoneForTel}}" class="cs-link"
+          >{{client.phoneFormatted}}</a
+        >
 
-                  <BR>
-              Contact us today to schedule your sewer cleaning, repair, or installation service. Text us 24/7 at 734-556-2035 or fill out our contact form to get started.
-              <BR><BR>
-              We’re here to ensure your sewer system stays in top condition, so you don’t have to worry about costly repairs down the road. Detroit Sewer Co. – Your Trusted Partner for Sewer Solutions in Detroit!</span>
-            
-              <BR>
-              <!--<p class="cs-text">
+        <br />
+        Contact us today to schedule your sewer cleaning, repair, or
+        installation service. Text us 24/7 at 734-556-2035 or fill out our
+        contact form to get started.
+        <br /><br />
+        We’re here to ensure your sewer system stays in top condition, so you
+        don’t have to worry about costly repairs down the road. Detroit Sewer
+        Co. – Your Trusted Partner for Sewer Solutions in Detroit!</span
+      >
+
+      <br />
+      <!--<p class="cs-text">
                 Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
             </p>-->
-            
-            <!--Address
+
+      <!--Address
             <span class="cs-header">Address</span>
             <a href="" class="cs-link">
                 PO Box 15252 Mill Creek, <br>Washington, USA 98082
             </a>-->
-            <!--Email-->
-       
-
-
-        </div>
-        <!-- Form -->
-        <form id="cs-form-490" name="Contact Form" method="post" style="margin-top:70px;">
-            <label class="cs-label" style="margin-bottom: 60px;">
-              Name
-                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="">
-            </label>
-            <label class="cs-label" style="margin-bottom: 60px;">
-                Email
-                <input class="cs-input" required type="text" id="email-490" name="email" placeholder="">
-            </label>
-            <label class="cs-label" style="margin-bottom: 60px;">
-                Phone
-                <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="">
-            </label>
-            <label class="cs-label -label-message" style="margin-bottom: 60px;">
-                How can I help?
-                <textarea class="cs-input" required name="Message" id="message-490" placeholder=""></textarea>
-            </label>
-            <button class="cs-button-solid" type="submit">Send</button>
-        </form>
+      <!--Email-->
     </div>
+    <!-- Form -->
+    <form
+      id="cs-form-490"
+      name="Contact Form"
+      netlify
+      method="post"
+      style="margin-top: 70px"
+    >
+      <label class="cs-label" style="margin-bottom: 60px">
+        Name
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="name-490"
+          name="name"
+          placeholder=""
+        />
+      </label>
+      <label class="cs-label" style="margin-bottom: 60px">
+        Email
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="email-490"
+          name="email"
+          placeholder=""
+        />
+      </label>
+      <label class="cs-label" style="margin-bottom: 60px">
+        Phone
+        <input
+          class="cs-input"
+          required
+          type="text"
+          id="phone-490"
+          name="phone"
+          placeholder=""
+        />
+      </label>
+      <label class="cs-label -label-message" style="margin-bottom: 60px">
+        How can I help?
+        <textarea
+          class="cs-input"
+          required
+          name="Message"
+          id="message-490"
+          placeholder=""
+        ></textarea>
+      </label>
+      <button class="cs-button-solid" type="submit">Send</button>
+    </form>
+  </div>
 </section>
-                                               
-                                
-
 
 {% endblock %}
