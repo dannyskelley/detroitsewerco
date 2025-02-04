@@ -10,6 +10,7 @@
 @media only screen and (min-width: 0em) {
   :root {
     --primary: #E60000;
+    --primaryDark: #003399;
     --primaryLight: #E60000;
     --secondary: #003399;
     --secondaryLight: #001f3f;
@@ -35,7 +36,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--primaryDark);
     text-align: inherit;
   }
   .cs-title {
