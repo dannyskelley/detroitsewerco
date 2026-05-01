@@ -68,3 +68,12 @@ public/             # Generated output (gitignored in production)
 - **Parent page links:** `/services/` page shows a card grid linking to all 5 service sub-pages; `/servicearea/` shows a card grid linking to all 16 city sub-pages
 - **Sitemap:** All 21 new pages included automatically via `addAllPagesToCollections: true`
 - Build produces 45 HTML pages (was 24 before this task)
+
+## Blog Content (as of Task #2)
+
+The 3 leftover beauty-salon template posts have been removed and replaced with 3 sewer-focused posts:
+- `signs-sewer-line-needs-cleaning.md` — Warning signs your sewer line needs cleaning
+- `what-causes-drain-backups-in-detroit.md` — Common causes of drain backups in Metro Detroit
+- `how-often-to-clean-your-sewer-line.md` — Sewer line cleaning frequency guidance
+
+All posts use `tags: [post]` for collection membership and include proper `title`, `description`, `author`, and `date` front matter. Blog renders via `src/_includes/layouts/post.html` (Liquid engine).
