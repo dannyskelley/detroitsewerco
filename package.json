@@ -6,9 +6,10 @@
     "scripts": {
         "watch:sass": "sass --watch src/assets/sass:./src/assets/css",
         "build:sass": "sass src/assets/sass:./src/assets/css",
-        "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
+        "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve --port=5000",
         "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
         "watch:cms": "npx decap-server",
+        "dev": "del-cli ./public --force && npm-run-all build:sass --parallel watch:sass watch:eleventy",
         "start": "del-cli ./public --force && npm-run-all --parallel watch:*",
         "build": "run-s build:*"
     },
