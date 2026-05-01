@@ -126,10 +126,11 @@
 @media only screen and (min-width: 0em) {
     #int-hero {
         min-height: 30vh;
-        padding-top: calc(50 / 16 * 1rem);
+        padding: clamp(10.9375rem, 22vw, 14rem) 1rem clamp(3rem, 8vw, 5rem);
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         position: relative;
         z-index: 1;
@@ -171,8 +172,8 @@
             width: 96%;
             max-width: calc(500 / 16 * 1rem);
             margin: 0 auto;
-            margin-top: calc(70 / 16 * 1rem);
-            margin-bottom: calc(30 / 16 * 1rem);
+            margin-top: calc(20 / 16 * 1rem);
+            margin-bottom: calc(20 / 16 * 1rem);
             color: #fff;
             position: relative;
         }
@@ -206,9 +207,9 @@
         font-size: inherit;
         height: auto;
         min-height: calc(300 / 16 * 1rem);
-        padding-top: calc(180 / 16 * 1rem);
+        padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
         background-attachment: fixed;
-        padding-block-end: calc(100 / 16 * 1rem);
+        margin-top: 100px;
     }
 }
 
