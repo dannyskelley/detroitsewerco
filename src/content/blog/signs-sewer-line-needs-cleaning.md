@@ -5,6 +5,7 @@ author: Detroit Sewer Co.
 date: 2026-04-10T09:00:00.000Z
 tags:
   - post
+permalink: /blog/signs-your-sewer-line-needs-cleaning/
 image: /assets/images/bg.jpg
 imageAlt: Sewer line cleaning service truck in Metro Detroit
 ---

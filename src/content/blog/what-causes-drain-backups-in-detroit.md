@@ -5,6 +5,7 @@ author: Detroit Sewer Co.
 date: 2026-04-24T09:00:00.000Z
 tags:
   - post
+permalink: /blog/what-causes-drain-backups-in-detroit/
 image: /assets/images/step1.jpg
 imageAlt: Hydro jetting sewer line in Metro Detroit neighborhood
 ---

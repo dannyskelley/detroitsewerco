@@ -5,6 +5,7 @@ author: Detroit Sewer Co.
 date: 2026-05-01T09:00:00.000Z
 tags:
   - post
+permalink: /blog/how-often-to-clean-your-sewer-line/
 image: /assets/images/step2.jpg
 imageAlt: Sewer line inspection and cleaning equipment in Metro Detroit
 ---
