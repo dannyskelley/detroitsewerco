@@ -144,28 +144,48 @@ eleventyNavigation:
       </span>
     </div>
 
-    <form id="cs-form-490" name="Contact Form" method="post" action="/" style="margin-top: 70px">
-      <label class="cs-label" style="margin-bottom: 60px">
-        Name
-        <input class="cs-input" required type="text" id="name-490" name="name" placeholder="" />
-      </label>
-      <label class="cs-label" style="margin-bottom: 60px">
-        Email
-        <input class="cs-input" required type="email" id="email-490" name="email" placeholder="" />
-      </label>
-      <label class="cs-label" style="margin-bottom: 60px">
-        Phone / Text Number
-        <input class="cs-input" required type="tel" id="phone-490" name="phone" placeholder="" />
-      </label>
-      <label class="cs-label -label-message" style="margin-bottom: 60px">
-        How can we help?
-        <textarea class="cs-input" required name="Message" id="message-490" placeholder=""></textarea>
-      </label>
-      <button class="cs-button-solid" type="submit">Send Message</button>
-      <p style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
-        Or text directly: <a href="sms:{{client.phoneForTel}}" style="color: var(--primary); font-weight: 700;">{{client.phoneFormatted}}</a> for the fastest response.
-      </p>
-    </form>
+    <div id="cs-form-wrapper" style="margin-top: 70px; width: 100%;">
+      <div id="cs-form-success" style="display:none; padding: 1.5rem; background: #e6f4ea; border: 1px solid #4caf50; border-radius: 6px; color: #2e7d32; font-weight: 600; font-size: 1.1rem;">
+        Thanks! Your message has been sent. We'll be in touch shortly.
+      </div>
+      <form id="cs-form-490" name="Contact Form" method="post" action="https://formsubmit.co/{{client.email}}">
+        <input type="hidden" name="_subject" value="New inquiry from Detroit Sewer Co. website" />
+        <input type="hidden" name="_next" value="/contact/?sent=true" />
+        <input type="hidden" name="_captcha" value="false" />
+        <label class="cs-label" style="margin-bottom: 60px">
+          Name
+          <input class="cs-input" required type="text" id="name-490" name="name" placeholder="" />
+        </label>
+        <label class="cs-label" style="margin-bottom: 60px">
+          Email
+          <input class="cs-input" required type="email" id="email-490" name="email" placeholder="" />
+        </label>
+        <label class="cs-label" style="margin-bottom: 60px">
+          Phone / Text Number
+          <input class="cs-input" required type="tel" id="phone-490" name="phone" placeholder="" />
+        </label>
+        <label class="cs-label -label-message" style="margin-bottom: 60px">
+          How can we help?
+          <textarea class="cs-input" required name="message" id="message-490" placeholder=""></textarea>
+        </label>
+        <button class="cs-button-solid" type="submit">Send Message</button>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
+          Or text directly: <a href="sms:{{client.phoneForTel}}" style="color: var(--primary); font-weight: 700;">{{client.phoneFormatted}}</a> for the fastest response.
+        </p>
+      </form>
+    </div>
+
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('sent') === 'true') {
+          var form = document.getElementById('cs-form-490');
+          if (form) form.style.display = 'none';
+          var msg = document.getElementById('cs-form-success');
+          if (msg) msg.style.display = 'block';
+        }
+      })();
+    </script>
   </div>
 </section>
 
