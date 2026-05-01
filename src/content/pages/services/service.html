@@ -1,0 +1,244 @@
+---
+pagination:
+  data: services
+  size: 1
+  alias: service
+  addAllPagesToCollections: true
+permalink: "services/{{ service.slug }}/"
+preloadImg: '/assets/images/bg.jpg'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ service.name }}",
+  "name": "{{ service.name }}",
+  "description": "{{ service.schemaDescription }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Detroit Sewer Co.",
+    "url": "https://detroitsewer.net",
+    "telephone": "+17345562035",
+    "areaServed": "Metro Detroit, Michigan"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Metro Detroit, Michigan"
+  }
+}
+</script>
+{% endblock %}
+
+{% block body %}
+
+<style>
+@media only screen and (min-width: 0rem) {
+  #banner-850 {
+    padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+  }
+  #banner-850 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #banner-850 .cs-int-title {
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #banner-850 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #003399;
+  }
+  #banner-850 .cs-background:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #003399;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-850 .cs-wave {
+    width: 48rem;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  #content-page-850 {
+    padding: var(--sectionPadding);
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #content-page-850 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #content-page-850 .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #content-page-850 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    color: var(--headerColor);
+  }
+  #content-page-850 p {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0 0 1rem;
+    color: var(--bodyTextColor);
+  }
+  #content-page-850 ul {
+    padding-left: 1.5rem;
+    margin: 0 0 2rem;
+    color: var(--bodyTextColor);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  #content-page-850 ul li {
+    list-style: none;
+    position: relative;
+  }
+  #content-page-850 ul li:before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: currentColor;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.625rem;
+    left: -0.75rem;
+  }
+  .service-cta-box {
+    background: #003399;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .service-cta-box p {
+    color: #fff;
+    margin: 0;
+  }
+  .service-cta-box strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .service-cta-box a {
+    color: lightskyblue;
+    font-weight: 700;
+  }
+  .cs-back-link {
+    font-size: 0.9rem;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  .cs-back-link:hover {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  #banner-850 .cs-wave {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+}
+</style>
+
+<div id="banner-850">
+  <div class="cs-container">
+    <span class="cs-int-title">{{ service.name }}</span>
+  </div>
+  <div class="cs-background" aria-hidden="true"></div>
+  <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+  </svg>
+</div>
+
+<section id="content-page-850">
+  <div class="cs-container">
+    <div class="cs-content">
+
+      <a href="/services/" class="cs-back-link">Back to All Services</a>
+
+      <h1 class="cs-title">{{ service.h1 }}</h1>
+
+      <p><em>{{ service.tagline if service.tagline else service.schemaDescription }}</em></p>
+
+      <p>{{ service.intro }}</p>
+
+      {% for para in service.bodyParagraphs %}
+      <p>{{ para }}</p>
+      {% endfor %}
+
+      <h2>What This Service Covers</h2>
+      <ul>
+        {% for bullet in service.bullets %}
+        <li>{{ bullet }}</li>
+        {% endfor %}
+      </ul>
+
+      <div class="service-cta-box">
+        <p><strong>Get fast service across Metro Detroit</strong>
+        Text Detroit Sewer Co. 24/7 at <a href="sms:7345562035">734-556-2035</a> or visit our <a href="/contact/">contact page</a>. We serve Detroit, Dearborn, Livonia, Warren, Troy, Southfield, Royal Oak, and all of Southeast Michigan.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}

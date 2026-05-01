@@ -56,4 +56,15 @@ public/             # Generated output (gitignored in production)
 - `src/config/server.js` — Eleventy dev server options (port 5000, showAllHosts: true)
 - `.eleventy.js` — Main Eleventy configuration
 - `src/_data/client.json` — Site metadata (used for sitemap hostname, etc.)
+- `src/_data/cities.json` — 16 Metro Detroit city entries used to paginate `/servicearea/[city-slug]/` pages
+- `src/_data/services.json` — 5 service entries used to paginate `/services/[service-slug]/` pages
 - Minification is only enabled in production (`ELEVENTY_ENV=PROD`)
+
+## SEO Architecture (as of Task #8)
+
+- **Individual city pages:** `src/content/pages/servicearea/city.html` (Eleventy pagination over `cities`) generates 16 pages at `/servicearea/[slug]/`, each with unique title, description, H1, and city-scoped LocalBusiness JSON-LD
+- **Individual service pages:** `src/content/pages/services/service.html` (Eleventy pagination over `services`) generates 5 pages at `/services/[slug]/`, each with unique title, description, H1, and Service JSON-LD
+- **Computed SEO data:** `city.11tydata.js` and `service.11tydata.js` use `eleventyComputed` to dynamically set `title` and `description` per paginated page
+- **Parent page links:** `/services/` page shows a card grid linking to all 5 service sub-pages; `/servicearea/` shows a card grid linking to all 16 city sub-pages
+- **Sitemap:** All 21 new pages included automatically via `addAllPagesToCollections: true`
+- Build produces 45 HTML pages (was 24 before this task)

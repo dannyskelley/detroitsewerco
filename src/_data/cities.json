@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Detroit",
+    "slug": "detroit",
+    "county": "Wayne County",
+    "blurb": "Detroit's sewer infrastructure is among the oldest in Michigan, with many lateral lines dating back 80 to 100 years. Clay pipe failures, root intrusion through cracked joints, and storm drain blockages caused by decades of sediment buildup are everyday realities for Detroit homeowners and commercial property managers.",
+    "extra": "Detroit Sewer Co. has worked extensively throughout Detroit neighborhoods from Southwest to East side, clearing severe backups and cleaning storm lines that serve large warehouse and retail complexes."
+  },
+  {
+    "name": "Dearborn",
+    "slug": "dearborn",
+    "county": "Wayne County",
+    "blurb": "Dearborn's dense residential neighborhoods and industrial corridors mean sewer lines here handle heavy loads year-round. Older clay and cast-iron laterals are common throughout East and West Dearborn, making root removal and hydro jetting essential preventive services for property owners.",
+    "extra": "From commercial properties near the Ford River Rouge Complex to residential streets lined with mature oaks, our team understands the unique sewer challenges Dearborn properties face."
+  },
+  {
+    "name": "Southfield",
+    "slug": "southfield",
+    "county": "Oakland County",
+    "blurb": "Southfield is home to hundreds of office towers, apartment complexes, and retail centers, all of which depend on well-maintained sewer and storm drain systems. Grease accumulation in commercial lines and root intrusion in aging residential laterals are the most common issues we address here.",
+    "extra": "Our high-volume hydro jetting equipment is especially well-suited for the large commercial sewer mains found throughout Southfield's busy I-696 and Northwestern Highway corridors."
+  },
+  {
+    "name": "Livonia",
+    "slug": "livonia",
+    "county": "Wayne County",
+    "blurb": "Much of Livonia was developed in the 1950s and 1960s, and the sewer laterals installed during that era are reaching the end of their service life. Tree-lined streets contribute to aggressive root intrusion, and slow drains or recurring backups in Livonia homes are often a sign that professional attention is overdue.",
+    "extra": "Detroit Sewer Co. serves homeowners and businesses throughout Livonia, restoring flow quickly and providing camera inspections that reveal exactly what is happening inside the pipe before costly assumptions are made."
+  },
+  {
+    "name": "Warren",
+    "slug": "warren",
+    "county": "Macomb County",
+    "blurb": "Warren is Macomb County's largest city and carries one of Southeast Michigan's heaviest mixes of residential and industrial sewer demand. Older neighborhoods in South Warren frequently experience root intrusion and collapsing clay laterals, while commercial properties along Van Dyke and Groesbeck need periodic storm drain service to handle heavy runoff.",
+    "extra": "Our crews are familiar with Warren's sewer grid and work efficiently to clear blockages, remove roots, and document conditions that may require municipal follow-up."
+  },
+  {
+    "name": "Royal Oak",
+    "slug": "royal-oak",
+    "county": "Oakland County",
+    "blurb": "Royal Oak's vibrant downtown restaurant scene generates significant grease load in its commercial sewer mains, while the city's older bungalow neighborhoods contend with clay pipe laterals increasingly compromised by tree roots. Both issues are well within our capabilities.",
+    "extra": "We serve restaurants, apartment buildings, and single-family homes throughout Royal Oak, keeping their sewer systems compliant and flowing with scheduled hydro jetting and emergency response."
+  },
+  {
+    "name": "Troy",
+    "slug": "troy",
+    "county": "Oakland County",
+    "blurb": "Troy's rapid commercial expansion along the Big Beaver and Crooks Road corridors has created significant stormwater management demands, and older residential sections near Maple Road face the same root intrusion issues common to Oakland County's mid-century neighborhoods.",
+    "extra": "Detroit Sewer Co. handles Troy's sewer and storm drain needs with the same professional approach we bring to every job, whether it's a single-family home backup or a multi-acre commercial storm drain system."
+  },
+  {
+    "name": "Ferndale",
+    "slug": "ferndale",
+    "county": "Oakland County",
+    "blurb": "Ferndale is a compact, densely developed suburb where older sewer infrastructure is the norm and mature street trees mean root intrusion is a persistent problem. Many Ferndale homes still have the original terra-cotta lateral lines, and a single storm event can trigger backups across entire blocks.",
+    "extra": "Our targeted root removal and hydro jetting services are particularly effective in Ferndale's close-set infrastructure, where precision matters as much as power."
+  },
+  {
+    "name": "Farmington Hills",
+    "slug": "farmington-hills",
+    "county": "Oakland County",
+    "blurb": "Farmington Hills spans a wide range of property ages, from 1970s subdivisions to newer commercial developments, and sewer issues here range from root-choked residential laterals to storm drain systems struggling to handle intense rainfall. Preventive maintenance pays dividends in a city where both residential and commercial property values are high.",
+    "extra": "Detroit Sewer Co. provides hydro jetting, root removal, and camera inspection services throughout Farmington Hills, helping property owners stay ahead of costly sewer failures."
+  },
+  {
+    "name": "Ann Arbor",
+    "slug": "ann-arbor",
+    "county": "Washtenaw County",
+    "blurb": "Ann Arbor's combination of 19th-century downtown infrastructure, mid-century residential neighborhoods, and modern University of Michigan facilities creates a uniquely varied set of sewer challenges. Older lateral lines near campus and in Old West Side frequently need root removal and hydro jetting to stay clear.",
+    "extra": "We travel regularly to Ann Arbor for residential and commercial clients who value professional sewer service backed by advanced equipment and honest assessments."
+  },
+  {
+    "name": "Sterling Heights",
+    "slug": "sterling-heights",
+    "county": "Macomb County",
+    "blurb": "As one of Metro Detroit's largest suburbs, Sterling Heights has both extensive residential sewer networks and major commercial corridors along Mound Road and Van Dyke that require periodic storm drain maintenance. Root intrusion and grease buildup are the most frequent issues we resolve for Sterling Heights clients.",
+    "extra": "Our equipment handles the volume and scale that Sterling Heights sewer systems demand, providing thorough cleaning and detailed inspection reports when conditions warrant."
+  },
+  {
+    "name": "Canton",
+    "slug": "canton",
+    "county": "Wayne County",
+    "blurb": "Canton Township has grown dramatically over the past two decades, and with that growth comes increasing demand on both municipal sewer capacity and private lateral lines. Newer construction does not mean trouble-free sewer lines; improper installation and settlement can cause early failures that video camera inspection quickly identifies.",
+    "extra": "Detroit Sewer Co. serves Canton homeowners and commercial property managers with fast response, professional equipment, and clear explanations of what we find and what it means for your property."
+  },
+  {
+    "name": "Novi",
+    "slug": "novi",
+    "county": "Oakland County",
+    "blurb": "Novi's booming commercial development along I-96 and Twelve Mile Road has created significant stormwater management responsibilities for shopping centers, office parks, and mixed-use developments. Residential areas in Novi also face lateral line issues as the community's original sewer infrastructure ages.",
+    "extra": "We provide scheduled storm drain cleaning and emergency sewer service throughout Novi, keeping commercial properties compliant and residential sewer systems running reliably."
+  },
+  {
+    "name": "Pontiac",
+    "slug": "pontiac",
+    "county": "Oakland County",
+    "blurb": "Pontiac is an older industrial city with a sewer network that reflects its history: aging cast-iron and clay mains, heavy root intrusion in residential areas, and storm drains that frequently need clearing after heavy rain. We approach Pontiac jobs with the heavy-duty equipment these conditions demand.",
+    "extra": "Detroit Sewer Co. has experience navigating Pontiac's older infrastructure, including coordination with the city when blockages originate in municipal mains rather than private laterals."
+  },
+  {
+    "name": "Saginaw",
+    "slug": "saginaw",
+    "county": "Saginaw County",
+    "blurb": "Saginaw's aging urban infrastructure and industrial legacy create demanding sewer conditions: clay lateral failures, root intrusion, and storm drain systems stressed by aging combined sewer overflows. Property owners here benefit from professional hydro jetting and camera inspection to keep their systems functioning between municipal upgrades.",
+    "extra": "Detroit Sewer Co. extends service to Saginaw for clients who need the capabilities of Metro Detroit's most experienced sewer specialists brought to their Mid-Michigan properties."
+  },
+  {
+    "name": "Port Huron",
+    "slug": "port-huron",
+    "county": "St. Clair County",
+    "blurb": "Port Huron's waterfront location and older downtown sewer infrastructure mean that root intrusion, sediment accumulation, and storm drain backups are common concerns for property owners. Seasonal freezing and thawing accelerates deterioration of older clay pipe laterals throughout the city.",
+    "extra": "Detroit Sewer Co. serves Port Huron and St. Clair County clients seeking professional sewer cleaning, root removal, and camera inspection backed by top-tier equipment and transparent service."
+  }
+]

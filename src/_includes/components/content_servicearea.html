@@ -254,6 +254,31 @@
   }
 }
                                 
+
+  .cs-city-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.85rem;
+    width: 100%;
+    margin: 1rem 0 2.5rem;
+  }
+  .cs-city-card {
+    display: block;
+    padding: 0.85rem 1.1rem;
+    background: #f0f4ff;
+    border: 2px solid #003399;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #003399;
+    transition: background 0.2s, color 0.2s;
+    text-align: center;
+  }
+  .cs-city-card:hover {
+    background: #003399;
+    color: #fff;
+  }
 </style>
 
 <div id="banner-850">
@@ -369,6 +394,14 @@
     Not sure what’s causing the issue? Our video camera inspections provide a clear view of the problem, allowing us to locate blockages or damage with precision. This ensures fast, effective repairs with minimal disruption.
 </p>
 
+
+<h2>Find Your City</h2>
+<p>We serve all of the cities and communities below. Click your city for service details and local information specific to your area.</p>
+<div class="cs-city-card-grid">
+    {% for city in cities %}
+    <a href="/servicearea/{{ city.slug }}/" class="cs-city-card">{{ city.name }}</a>
+    {% endfor %}
+</div>
 
 <h2>Contact Us Today</h2>
 <p>
