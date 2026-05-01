@@ -14,7 +14,7 @@
     gap: 2.5rem;
   }
   #blog-preview-727 .cs-content {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   #blog-preview-727 .cs-topper {
@@ -138,8 +138,7 @@
     </div>
 
     <ul class="cs-card-group">
-      {%- for post in collections.post | reverse -%}
-      {%- if loop.index <= 3 -%}
+      {%- for post in collections.post | reverse | limit(3) -%}
       <li class="cs-item">
         <a href="{{ post.url }}" class="cs-picture" aria-label="{{ post.data.title }}">
           <img
@@ -157,7 +156,6 @@
           <a href="{{ post.url }}" class="cs-link">Read More</a>
         </div>
       </li>
-      {%- endif -%}
       {%- endfor -%}
     </ul>
 
