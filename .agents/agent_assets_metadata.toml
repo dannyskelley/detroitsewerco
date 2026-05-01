@@ -1,0 +1,115 @@
+uploads = []
+
+[[generated]]
+id = "nSGNc6ric7KDkDm_mxguX"
+uri = "file://src/assets/images/gallery-before-1.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ZyFmkmXEUeGnL6VA5g5ye"
+uri = "file://src/assets/images/gallery-before-2.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "XTln-0n-0HZJr6n0mK7HB"
+uri = "file://src/assets/images/gallery-before-3.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "cjgWxu2fvjHYcs78mS5RY"
+uri = "file://src/assets/images/gallery-before-4.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "OHB02CvTQBY1i9_P8-gX5"
+uri = "file://src/assets/images/gallery-after-1.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "yH0lNihlDhUISL2vN8NbG"
+uri = "file://src/assets/images/gallery-after-2.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "7JKFHMTt7Xxzp3XNZ48ZO"
+uri = "file://src/assets/images/gallery-after-3.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "7sULVfOBFMLdbVsgmsaJE"
+uri = "file://src/assets/images/gallery-after-4.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "CcQ_01DlJeB-yMK-P5WIe"
+uri = "file://attached_assets/stock_images/roots-sewer-before.jpg"
+type = "image"
+title = "tree roots growing inside sewer pipe underground"
+
+[[outputs]]
+id = "PEGftMa0J7XKmH2IXEz4X"
+uri = "file://attached_assets/stock_images/drain-buildup-before.jpg"
+type = "image"
+title = "sewer pipe with grease buildup and corrosion inside"
+
+[[outputs]]
+id = "c3ohMnWFzv6oK8lGxkMbv"
+uri = "file://attached_assets/stock_images/damaged-pipe-before.jpg"
+type = "image"
+title = "damaged old sewer pipe excavation trench underground"
+
+[[outputs]]
+id = "iZ2Rl6FHqrp9lFaBKdvw1"
+uri = "file://attached_assets/stock_images/hydro-jet-cleaning-after.jpg"
+type = "image"
+title = "professional plumber hydro jetting sewer drain cleaning"
+
+[[outputs]]
+id = "K4ohk1kc3ug1PA04-fL12"
+uri = "file://attached_assets/stock_images/clean-drain-after.jpg"
+type = "image"
+title = "clean new sewer drain pipe after professional cleaning"
+
+[[outputs]]
+id = "MbkB_05BNknyFOd7GDKgx"
+uri = "file://attached_assets/stock_images/new-pipe-installed-after.jpg"
+type = "image"
+title = "new sewer pipe installed underground trenchless replacement"
+
+[[outputs]]
+id = "SWo_92cgt3HkraBozCPVR"
+uri = "file://attached_assets/stock_images/drain-cleanout-after.jpg"
+type = "image"
+title = "sewer drain clean out access point ground level"
+
+[[outputs]]
+id = "NNh3k_vJks9og9bZc8YlT"
+uri = "file://attached_assets/stock_images/drain-rod-cleaning.jpg"
+type = "image"
+title = "plumber using drain snake or rod to clear sewer pipe"
+
+[[outputs]]
+id = "QNnhqSr58sY50y8dKLmmJ"
+uri = "file://attached_assets/stock_images/pressure-washing-drain.jpg"
+type = "image"
+title = "plumber hydro jet pressure washing drain pipes"
+
+[[outputs]]
+id = "I5dzFmqfLEv5Nc3TdBLOw"
+uri = "file://attached_assets/stock_images/sewer-excavation.jpg"
+type = "image"
+title = "sewer line repair digging excavation pipe installation"
+
+[[outputs]]
+id = "u9oDfdBC0s8zZDw-N5NKh"
+uri = "file://attached_assets/stock_images/clean-drain-grate.jpg"
+type = "image"
+title = "clean residential storm drain grate installed street"
