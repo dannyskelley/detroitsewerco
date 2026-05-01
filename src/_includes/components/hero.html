@@ -2,7 +2,6 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-
 <style>
   /*-- -------------------------- -->
 <---           Hero             -->
@@ -11,13 +10,10 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-997 {
-      /* 200px - 300px - leaving extra space for the navigation */
       padding: clamp(12.5rem, 12.95vw, 15.75rem) 2rem 0;
-      /* 100px - 250px */
       padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
       position: relative;
       z-index: 1;
-      /* prevents overflow from the lines extending past the screen width */
       overflow: hidden;
       margin-top: 90px;
   }
@@ -29,7 +25,6 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      /* 100px - 200px */
       gap: clamp(6.25rem, 25vw, 12.5rem);
   }
   #hero-997 .cs-content {
@@ -42,7 +37,6 @@
       box-sizing: border-box;
   }
   #hero-997 .cs-topper {
-      /* 13px - 16px */
       font-size: clamp(0.8125rem, 1.6vw, 1rem);
       line-height: 1.2em;
       white-space: nowrap;
@@ -60,7 +54,6 @@
       position: relative;
   }
   #hero-997 .cs-topper:after {
-      /* white line */
       content: "";
       width: 50%;
       max-width: 7.5rem;
@@ -71,7 +64,6 @@
       display: block;
   }
   #hero-997 .cs-title {
-      /* 39px - 80px */
       font-size: clamp(2.6375rem, 8.4vw, 6rem);
       text-transform: none;
       font-weight: 900;
@@ -87,14 +79,30 @@
       color: lightskyblue;
   }
   #hero-997 .cs-text {
-      /* 16px - 20px */
-      font-size: clamp(1.3rem, 1.95vw, 1.5rem);
+      font-size: clamp(1rem, 1.95vw, 1.25rem);
       line-height: 1.5em;
       text-align: left;
       width: 100%;
       max-width: 39.375rem;
-      margin: 0 0 2rem 0;
+      margin: 0 0 1.5rem 0;
       color: var(--bodyTextColorWhite);
+  }
+  #hero-997 .cs-deaf-notice {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      width: 100%;
+      max-width: 39.375rem;
+      margin: 0 0 2rem 0;
+      color: #fff;
+      background: rgba(255,255,255,0.13);
+      border-left: 3px solid lightskyblue;
+      padding: 0.65rem 1rem;
+      border-radius: 0 4px 4px 0;
+  }
+  #hero-997 .cs-deaf-notice a {
+      color: lightskyblue;
+      font-weight: 700;
+      text-decoration: none;
   }
   #hero-997 .cs-button-box {
       display: flex;
@@ -103,22 +111,18 @@
       align-items: center;
       gap: 1.25rem;
   }
-  
-  
   #hero-997 .cs-button-transparent:before {
       content: "";
       position: absolute;
       display: block;
       background: #fff;
       opacity: 1;
-      /* so it sits on top of the border */
       top: -1px;
       left: -1px;
       right: -1px;
       bottom: -1px;
       z-index: -1;
       transform-origin: left;
-      /* this is what creates the grow affect on hover */
       transform: scaleX(0);
       transition: transform 0.3s;
   }
@@ -129,7 +133,6 @@
       transform: scaleX(1);
   }
   #hero-997 .cs-background {
-      /* Background Image */
       width: 100%;
       height: 100%;
       display: block;
@@ -139,13 +142,12 @@
       z-index: -2;
   }
   #hero-997 .cs-background:before {
-      /* Black Color Overlay */
       content: "";
       width: 100%;
       height: 100%;
       background: linear-gradient(
           41deg,
-          rgba(0, 0,0, 0.95) 0%,
+          rgba(0, 0, 0, 0.95) 0%,
           rgba(30, 58, 114, 0.0) 100%
       );
       opacity: 1;
@@ -154,7 +156,6 @@
       top: 0;
       left: 0;
       z-index: 1;
-      /* prevents the cursor from interacting with it */
       pointer-events: none;
   }
   #hero-997 .cs-background img {
@@ -163,67 +164,55 @@
       left: 0;
       height: 100%;
       width: 100%;
-      /* Makes image act like a background-image */
       object-fit: cover;
   }
 }
-/* Large Desktop Parallax Effect - 1300px */
+/* Tablet - 660px */
 @media only screen and (min-width: 41.25rem) {
   #hero-997 {
     margin-top: 156px;
-      padding: clamp(8.5rem, 12.95vw, 11.75rem) 2rem 0;
-      padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
+    padding: clamp(8.5rem, 12.95vw, 11.75rem) 2rem 0;
+    padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
   }
-
-
-/* Large Desktop Parallax Effect - 1300px */
+/* Desktop - 932px */
 @media only screen and (min-width: 58.25rem) {
-    
   #hero-997 {
     margin-top: 100px;
-      padding: clamp(15.5rem, 15.95vw, 15.75rem) 2rem 0;
-      /* 100px - 250px */
-      padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
-      background: url("/assets/images/bg.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      /* creates parallax effect on background image */
-      background-attachment: fixed;
-      /* remove img tag so we can make parallax work */
+    padding: clamp(15.5rem, 15.95vw, 15.75rem) 2rem 0;
+    padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
+    background: url("/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   #hero-997 .cs-background img {
       display: none;
   }
 }
 }
-                              
 </style>
 
 <section id="hero-997">
   <div class="cs-container">
-      <div class="cs-content">
-         
-          <h1 class="cs-title" >Get Your Sewer & Storm Lines
-            <BR> <span  class="cs-color">Flowing Again</span> </h1>
-          <p class="cs-text">
-           
-          
-            At Detroit Sewer Co, we provide professional sewer cleaning, repair, and line installation services using top-of-the-line equipment. Whether you're facing blockages or need routine maintenance, we’re here to help.
-          </p>
-          <div class="cs-button-box">
-
-            {% include 'components/cta_button.html' %}
-              
-          </div>
+    <div class="cs-content">
+      <h1 class="cs-title">Get Your Sewer &amp; Storm Lines
+        <br><span class="cs-color">Flowing Again</span>
+      </h1>
+      <p class="cs-text">
+        Detroit Sewer Co provides professional sewer cleaning, repair, and line installation across Metro Detroit using top-of-the-line equipment. Available 24/7 for residential and commercial needs.
+      </p>
+      <p class="cs-deaf-notice">
+        📱 <strong>Text is always fastest:</strong> The owner is deaf — texting <a href="sms:7345562035">734-556-2035</a> gets an immediate response, day or night.
+      </p>
+      <div class="cs-button-box">
+        {% include 'components/cta_button.html' %}
       </div>
+    </div>
   </div>
-  <!-- Background Image -->
   <picture class="cs-background">
-      <source media="(max-width: 600px)" srcset="/assets/images/bg-m.jpg">
-      <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
-      <img decoding="async" src="/assets/images/bg.jpg" alt="restaurant" width="1920" height="1200" aria-hidden="true">
+    <source media="(max-width: 600px)" srcset="/assets/images/bg-m.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
+    <img decoding="async" src="/assets/images/bg.jpg" alt="Detroit Sewer Co. service truck ready for sewer repair in Metro Detroit" width="1920" height="1200" aria-hidden="true">
   </picture>
 </section>
-                              
-

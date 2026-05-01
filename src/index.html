@@ -1,6 +1,6 @@
 ---
-title: 'Detroit Sewer Co. | Specialist Sewer Repair & Storm Drain Cleaning in Metro Detroit'
-description: 'Detroit Sewer Co. for reliable sewer repair, storm drain cleaning, and maintenance services. Serving Metro Detroit with fast, professional, and affordable solutions for residential and commercial needs. Call now for a free consultation!'
+title: 'Sewer Repair & Drain Cleaning'
+description: 'Expert sewer repair, storm drain cleaning & line installation in Metro Detroit. Fast 24/7 response. Text 734-556-2035 for a free consultation. Residential & commercial.'
 permalink: '/'
 preloadImg: '/assets/images/bg-m.jpg'
 eleventyNavigation:
@@ -14,46 +14,17 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
     <link rel="stylesheet" href="/assets/css/critical.css" />
-
-  
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-
 {% endblock %}
 
 {% block body %}
 
-    
-{% include 'components/hero.html' %}    
+{% include 'components/hero.html' %}
 {% include 'components/home2.html' %}
-
-
 {% include 'components/home3.html' %}
 {% include 'components/steps.html' %}
 {% include 'components/testimonial.html' %}
-
-
+{% include 'components/facebook_videos.html' %}
 {% include 'components/why.html' %}
-
 {% include 'components/cta.html' %}
 
-
-
-
-
-    {% endblock %}
+{% endblock %}

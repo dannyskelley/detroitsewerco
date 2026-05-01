@@ -1,16 +1,15 @@
 {
-    "name": "Detroit Sewer Co. | Expert Sewer Repair & Drain Cleaning in Metro Detroit",
-    "email": "JunkyRabbit@gmail.com",
+    "name": "Detroit Sewer Co.",
+    "email": "danfresh@gmail.com",
     "phoneForTel": "734-556-2035",
     "phoneFormatted": "734-556-2035",
     "address": {
         "lineOne": "",
         "lineTwo": "",
-        "city": "",
+        "city": "Detroit",
         "state": "MI",
         "zip": "",
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },
     "domain": "https://detroitsewer.net"
 }
-
