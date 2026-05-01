@@ -1,0 +1,166 @@
+<style>
+@media only screen and (min-width: 0rem) {
+  #blog-preview-727 {
+    padding: var(--sectionPadding);
+    background-color: #f5f7fb;
+  }
+  #blog-preview-727 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #blog-preview-727 .cs-content {
+    text-align: center;
+    width: 100%;
+  }
+  #blog-preview-727 .cs-topper {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  #blog-preview-727 .cs-title {
+    font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+  }
+  #blog-preview-727 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  #blog-preview-727 .cs-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  #blog-preview-727 .cs-picture {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+  #blog-preview-727 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  #blog-preview-727 .cs-item:hover .cs-picture img {
+    transform: scale(1.04);
+  }
+  #blog-preview-727 .cs-flex {
+    padding: 1.25rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  #blog-preview-727 .cs-date {
+    font-size: 0.8125rem;
+    color: var(--bodyTextColor);
+    opacity: 0.7;
+  }
+  #blog-preview-727 .cs-h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #blog-preview-727 .cs-desc {
+    font-size: 0.9375rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
+    flex: 1;
+  }
+  #blog-preview-727 .cs-link {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+  #blog-preview-727 .cs-link:hover {
+    text-decoration: underline;
+  }
+  #blog-preview-727 .cs-blog-link {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+  #blog-preview-727 .cs-blog-link:hover {
+    background: #002277;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  #blog-preview-727 .cs-card-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 64rem) {
+  #blog-preview-727 .cs-card-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+
+<section id="blog-preview-727">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Sewer Tips</span>
+      <h2 class="cs-title">From Our Blog</h2>
+    </div>
+
+    <ul class="cs-card-group">
+      {%- for post in collections.post | reverse -%}
+      {%- if loop.index <= 3 -%}
+      <li class="cs-item">
+        <a href="{{ post.url }}" class="cs-picture" aria-label="{{ post.data.title }}">
+          <img
+            src="{{ post.data.image }}"
+            alt="{{ post.data.imageAlt }}"
+            width="400"
+            height="225"
+            decoding="async"
+            loading="lazy" />
+        </a>
+        <div class="cs-flex">
+          <span class="cs-date">{{ post.date | postDate }}</span>
+          <h3 class="cs-h3">{{ post.data.title }}</h3>
+          <p class="cs-desc">{{ post.data.description }}</p>
+          <a href="{{ post.url }}" class="cs-link">Read More</a>
+        </div>
+      </li>
+      {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    <a href="/blog/" class="cs-blog-link">View All Posts</a>
+  </div>
+</section>

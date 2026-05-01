@@ -17,7 +17,11 @@
       "Ideal for residential laterals, commercial kitchens, and storm drains",
       "Available for emergency and scheduled maintenance calls"
     ],
-    "schemaDescription": "High-pressure hydro jetting service for residential and commercial sewer and storm drain lines in Metro Detroit, Michigan."
+    "schemaDescription": "High-pressure hydro jetting service for residential and commercial sewer and storm drain lines in Metro Detroit, Michigan.",
+    "relatedPosts": [
+      { "title": "What Causes Drain Backups in Detroit?", "url": "/blog/what-causes-drain-backups-in-detroit/" },
+      { "title": "How Often to Clean Your Sewer Line", "url": "/blog/how-often-to-clean-your-sewer-line/" }
+    ]
   },
   {
     "name": "Root Removal",
@@ -37,7 +41,11 @@
       "Effective on clay, cast-iron, and older PVC lines",
       "Camera inspection available to document pipe condition after treatment"
     ],
-    "schemaDescription": "Professional sewer root removal service for residential and commercial sewer lines throughout Metro Detroit and Southeast Michigan."
+    "schemaDescription": "Professional sewer root removal service for residential and commercial sewer lines throughout Metro Detroit and Southeast Michigan.",
+    "relatedPosts": [
+      { "title": "Signs Your Sewer Line Needs Cleaning", "url": "/blog/signs-your-sewer-line-needs-cleaning/" },
+      { "title": "What Causes Drain Backups in Detroit?", "url": "/blog/what-causes-drain-backups-in-detroit/" }
+    ]
   },
   {
     "name": "Sewer Backup & Emergency Service",
@@ -57,7 +65,11 @@
       "Camera inspection available to locate root cause",
       "Documentation provided when city main involvement is suspected"
     ],
-    "schemaDescription": "24/7 emergency sewer backup clearing and restoration service for residential and commercial properties across Metro Detroit, Michigan."
+    "schemaDescription": "24/7 emergency sewer backup clearing and restoration service for residential and commercial properties across Metro Detroit, Michigan.",
+    "relatedPosts": [
+      { "title": "What Causes Drain Backups in Detroit?", "url": "/blog/what-causes-drain-backups-in-detroit/" },
+      { "title": "Signs Your Sewer Line Needs Cleaning", "url": "/blog/signs-your-sewer-line-needs-cleaning/" }
+    ]
   },
   {
     "name": "Storm Drain & Culvert Cleaning",
@@ -77,7 +89,11 @@
       "Serves commercial, industrial, and residential properties",
       "Scheduled maintenance and emergency response available"
     ],
-    "schemaDescription": "Commercial and municipal storm drain and culvert cleaning service using high-capacity hydro jetting equipment throughout Metro Detroit."
+    "schemaDescription": "Commercial and municipal storm drain and culvert cleaning service using high-capacity hydro jetting equipment throughout Metro Detroit.",
+    "relatedPosts": [
+      { "title": "How Often to Clean Your Sewer Line", "url": "/blog/how-often-to-clean-your-sewer-line/" },
+      { "title": "What Causes Drain Backups in Detroit?", "url": "/blog/what-causes-drain-backups-in-detroit/" }
+    ]
   },
   {
     "name": "Video Camera Inspection",
@@ -97,6 +113,10 @@
       "Ideal for pre-purchase inspections and post-cleaning verification",
       "Precise location of problems prevents unnecessary digging"
     ],
-    "schemaDescription": "Professional video camera sewer line inspection service for residential and commercial properties throughout Metro Detroit and Southeast Michigan."
+    "schemaDescription": "Professional video camera sewer line inspection service for residential and commercial properties throughout Metro Detroit and Southeast Michigan.",
+    "relatedPosts": [
+      { "title": "Signs Your Sewer Line Needs Cleaning", "url": "/blog/signs-your-sewer-line-needs-cleaning/" },
+      { "title": "How Often to Clean Your Sewer Line", "url": "/blog/how-often-to-clean-your-sewer-line/" }
+    ]
   }
 ]
