@@ -2,6 +2,11 @@
 <!--            Facebook / Social Proof          -->
 <!-- ============================================ -->
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+</script>
+
 <style>
   /*-- -------------------------- -->
 <---        Facebook Videos     -->
@@ -64,86 +69,31 @@
     gap: 1.5rem;
     margin-top: 1rem;
   }
-  #fb-social-697 .cs-video-card {
-    flex: 1 1 260px;
-    max-width: 300px;
+  #fb-social-697 .cs-video-wrap {
+    flex: 1 1 300px;
+    max-width: 340px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.13);
-    background: #111;
-    text-decoration: none;
-    color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    background: #fff;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  #fb-social-697 .cs-video-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.22);
-  }
-  #fb-social-697 .cs-video-thumb {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    background: #1a2a4a;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
   }
-  #fb-social-697 .cs-video-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
-  }
-  #fb-social-697 .cs-play-btn {
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    background: rgba(24,119,242,0.92);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s;
-  }
-  #fb-social-697 .cs-video-card:hover .cs-play-btn {
-    background: #1558b0;
-  }
-  #fb-social-697 .cs-play-btn svg {
-    width: 24px;
-    height: 24px;
-    fill: #fff;
-    margin-left: 4px;
-  }
-  #fb-social-697 .cs-video-info {
-    padding: 1rem;
-    background: #fff;
-    color: #1a1a1a;
-    flex: 1;
-    text-align: left;
+  #fb-social-697 .cs-video-wrap .fb-video,
+  #fb-social-697 .cs-video-wrap .fb-video span,
+  #fb-social-697 .cs-video-wrap .fb-video iframe {
+    width: 100% !important;
+    max-width: 340px;
   }
   #fb-social-697 .cs-video-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #1877f2;
-    margin-bottom: 0.35rem;
-    display: block;
-  }
-  #fb-social-697 .cs-video-title {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.3em;
-    color: #1a1a1a;
-    margin: 0;
-  }
-  #fb-social-697 .cs-video-sub {
+    width: 100%;
+    padding: 0.6rem 1rem;
     font-size: 0.85rem;
-    color: #666;
-    margin-top: 0.3rem;
+    font-weight: 700;
+    color: #1877f2;
+    text-align: left;
+    background: #fff;
   }
   #fb-social-697 .cs-fb-cta {
     margin-top: 1rem;
@@ -195,47 +145,41 @@
 
     <div class="cs-video-grid">
 
-      <a href="https://www.facebook.com/fsuperduty/videos" target="_blank" rel="noopener noreferrer" class="cs-video-card" aria-label="Watch hydro-jet drain cleaning video on Facebook">
-        <div class="cs-video-thumb">
-          <img src="/assets/images/bg.jpg" alt="Detroit Sewer Co. hydro-jet drain cleaning" width="300" height="169" loading="lazy" decoding="async">
-          <div class="cs-play-btn" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          </div>
-        </div>
-        <div class="cs-video-info">
-          <span class="cs-video-label">Facebook Video</span>
-          <p class="cs-video-title">Hydro-Jet Drain Cleaning</p>
-          <p class="cs-video-sub">See high-pressure jetting clear years of buildup</p>
-        </div>
-      </a>
+      <div class="cs-video-wrap">
+        <div
+          class="fb-video"
+          data-href="https://www.facebook.com/share/v/18su8kzqn2/"
+          data-width="340"
+          data-show-text="false"
+          data-allowfullscreen="true"
+          data-autoplay="false"
+        ></div>
+        <span class="cs-video-label">Real Job Video</span>
+      </div>
 
-      <a href="https://www.facebook.com/fsuperduty/videos" target="_blank" rel="noopener noreferrer" class="cs-video-card" aria-label="Watch sewer line inspection video on Facebook">
-        <div class="cs-video-thumb">
-          <img src="/assets/images/bg.jpg" alt="Detroit Sewer Co. sewer line inspection" width="300" height="169" loading="lazy" decoding="async">
-          <div class="cs-play-btn" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          </div>
-        </div>
-        <div class="cs-video-info">
-          <span class="cs-video-label">Facebook Video</span>
-          <p class="cs-video-title">Sewer Line Inspection</p>
-          <p class="cs-video-sub">Camera inspection revealing a cracked sewer line</p>
-        </div>
-      </a>
+      <div class="cs-video-wrap">
+        <div
+          class="fb-video"
+          data-href="https://www.facebook.com/share/r/1EFk9GGRD5/"
+          data-width="340"
+          data-show-text="false"
+          data-allowfullscreen="true"
+          data-autoplay="false"
+        ></div>
+        <span class="cs-video-label">Real Job Video</span>
+      </div>
 
-      <a href="https://www.facebook.com/fsuperduty/videos" target="_blank" rel="noopener noreferrer" class="cs-video-card" aria-label="Watch storm drain repair video on Facebook">
-        <div class="cs-video-thumb">
-          <img src="/assets/images/bg.jpg" alt="Detroit Sewer Co. storm drain repair" width="300" height="169" loading="lazy" decoding="async">
-          <div class="cs-play-btn" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-          </div>
-        </div>
-        <div class="cs-video-info">
-          <span class="cs-video-label">Facebook Video</span>
-          <p class="cs-video-title">Storm Drain Repair</p>
-          <p class="cs-video-sub">Full storm drain replacement in Metro Detroit</p>
-        </div>
-      </a>
+      <div class="cs-video-wrap">
+        <div
+          class="fb-video"
+          data-href="https://www.facebook.com/share/r/1ApyaiQJGT/"
+          data-width="340"
+          data-show-text="false"
+          data-allowfullscreen="true"
+          data-autoplay="false"
+        ></div>
+        <span class="cs-video-label">Real Job Video</span>
+      </div>
 
     </div>
 
