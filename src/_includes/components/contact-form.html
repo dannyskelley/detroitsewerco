@@ -1,0 +1,191 @@
+<!-- ============================================ -->
+<!--                 Contact Form                 -->
+<!-- ============================================ -->
+
+<style>
+@media only screen and (min-width: 0rem) {
+  #cs-contact-home {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+  }
+  #cs-contact-home .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  #cs-contact-home .cs-content {
+    width: 100%;
+    max-width: 32.625rem;
+    text-align: left;
+  }
+  #cs-contact-home .cs-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+  }
+  #cs-contact-home .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.6em;
+    color: var(--bodyTextColor);
+    margin: 0 0 1.5rem;
+  }
+  #cs-contact-home .cs-topper {
+    font-size: 0.8125rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 1.25rem 0 0.5rem;
+    color: #b4b2c7;
+    display: block;
+  }
+  #cs-contact-home .cs-link {
+    font-size: 1.0625rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--headerColor);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  #cs-contact-home .cs-link:hover {
+    text-decoration: underline;
+  }
+  #cs-contact-home #cs-form-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #cs-contact-home .cs-label {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  #cs-contact-home .cs-input,
+  #cs-contact-home textarea {
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    padding-left: 1rem;
+    border: 2px solid #d0d0d0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+    font-family: inherit;
+  }
+  #cs-contact-home .cs-input:focus,
+  #cs-contact-home textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
+  #cs-contact-home textarea {
+    height: 8rem;
+    padding-top: 1rem;
+    resize: vertical;
+  }
+  #cs-contact-home .cs-form-wrapper {
+    width: 100%;
+  }
+  #cs-contact-home .cs-success {
+    display: none;
+    padding: 1.5rem;
+    background: #e6f4ea;
+    border: 1px solid #4caf50;
+    border-radius: 6px;
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  #cs-contact-home .cs-subtext {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  #cs-contact-home .cs-subtext a {
+    color: var(--primary);
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  #cs-contact-home .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+  #cs-contact-home .cs-content {
+    width: 38%;
+    flex-shrink: 0;
+  }
+  #cs-contact-home .cs-form-wrapper {
+    flex: 1;
+  }
+}
+</style>
+
+<section id="cs-contact-home">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h2 class="cs-title">Ready to Get Your Drains Flowing Again?</h2>
+      <p class="cs-text">
+        Text or fill out the form and we will get back to you fast. Detroit Sewer Co. serves all of Metro Detroit, 24 hours a day.
+      </p>
+      <span class="cs-topper">Text 24/7 for Fastest Response</span>
+      <a href="sms:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
+      <span class="cs-topper">Email Us</span>
+      <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
+    </div>
+
+    <div class="cs-form-wrapper">
+      <div id="cs-form-home-success" class="cs-success">
+        Thanks! Your message has been sent. We will be in touch shortly.
+      </div>
+      <form id="cs-form-home" name="Home Contact Form" method="post" action="https://formsubmit.co/{{client.email}}">
+        <input type="hidden" name="_subject" value="New inquiry from Detroit Sewer Co. website" />
+        <input type="hidden" name="_next" value="/?sent=true" />
+        <input type="hidden" name="_captcha" value="false" />
+        <label class="cs-label">
+          Name
+          <input class="cs-input" required type="text" name="name" placeholder="" />
+        </label>
+        <label class="cs-label">
+          Email
+          <input class="cs-input" required type="email" name="email" placeholder="" />
+        </label>
+        <label class="cs-label">
+          Phone / Text Number
+          <input class="cs-input" required type="tel" name="phone" placeholder="" />
+        </label>
+        <label class="cs-label">
+          How can we help?
+          <textarea class="cs-input" required name="message" placeholder=""></textarea>
+        </label>
+        <button class="cs-button-solid" type="submit">Send Message</button>
+        <p class="cs-subtext">
+          Or text directly: <a href="sms:{{client.phoneForTel}}">{{client.phoneFormatted}}</a> for the fastest response.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('sent') === 'true') {
+        var form = document.getElementById('cs-form-home');
+        if (form) form.style.display = 'none';
+        var msg = document.getElementById('cs-form-home-success');
+        if (msg) msg.style.display = 'block';
+      }
+    })();
+  </script>
+</section>
